@@ -1,0 +1,144 @@
+/**------------ Variable Roots for CSS ------------ **/
+/*!------------ Header Formatting ------------ !*/
+:root {
+	--header-height: 3rem;
+	--font-semi: 600;
+}
+
+/*!------------ Stylization Colors ------------ !*/
+:root {
+	/*!----- Text Colors -----!*/
+	--first-text: #86c232; /** ----- Lime Green ----- **/
+	--second-text: #61892f; /** ----- Flat Pea Soup Green ----- **/
+	--third-text: #ffffff; /** ----- White ----- **/
+	/*!----- Background Colors -----!*/
+	--fist-bkg: #222629; /** ----- Dark Charcole ----- **/
+	--second-bkg: #474b4f; /** ----- Darker mid Grey ----- **/
+	--third-bkg: #6b6e70; /** ----- Light Grey ----- **/
+	/*!----- Additional Colors -----!*/
+	--addititional-color-first: #edeae5; /** ----- Light Smokey Grey ----- **/
+	--addititional-color-second: #ffffff; /** ----- White ----- **/
+	--addititional-color-third: #eeebe6; /** ----- Linen ----- **/
+}
+
+/*!----- Text Formatting and Size -----!*/
+:root {
+	--body-font: 'Muli', sans-serif;
+	--big-font-size: 2rem;
+	--h2-font-size: 1.25rem;
+	--normal-font-size: 0.938rem;
+}
+
+/*!----- Text Formatting and Size Media Query @ Break Point -----!*/
+@media screen and (min-width: 768px) {
+	:root {
+		--big-font-size: 3.5rem;
+		--h2-font-size: 2rem;
+		--normal-font-size: 1rem;
+	}
+}
+
+/*!----- Margin Formatting -----!*/
+:root {
+	--mb-1: 0.5rem;
+	--mb-2: 1rem;
+	--mb-3: 1.5rem;
+	--mb-4: 2rem;
+	--mb-5: 2.5rem;
+	--mb-6: 3rem;
+}
+
+/*!----- Z Index Formatting -----!*/
+:root {
+	--z-back: -10;
+	--z-normal: 1;
+	--z-tooltip: 10;
+	--z-fixed: 50;
+}
+
+/** Page Formatting **/
+
+/*!----- Over Format -----!*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Muli', sans-serif;
+}
+
+/*!----- Before/After Format -----!*/
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
+
+/*!----- HTML TAG Format -----!*/
+*,
+html {
+	scroll-behavior: smooth;
+}
+/*!----- BODY TAG Format -----!*/
+body {
+	margin: var(--header-height) 0 0 0;
+	font-family: var(--body-font);
+	font-size: var(--normal-font-size);
+	color: var(--third-text);
+	background-color: var(--fist-bkg);
+}
+
+/*!----- Header & Paragraph Margin Format -----!*/
+h1,
+h2,
+p {
+	margin: 0;
+}
+
+/*!----- List Parent Format -----!*/
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/*!----- Link Format -----!*/
+a {
+	text-decoration: none;
+}
+
+/*!----- Image Tag Format -----!*/
+
+/*!----- Button Format -----!*/
+.button {
+	display: inline-block;
+	background-color: var(--first-text);
+	color: var(--third-text);
+	padding: 0.75rem 2.5rem;
+	font-weight: var(--font-semi);
+	border-radius: 0.5rem;
+}
+.button:hover {
+	box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
+	color: var(--first-text);
+	background-color: var(--third-text);
+}
+
+/*!----- Layout Format -----!*/
+
+@media screen and (min-width: 768px) {
+	body {
+		margin: 0;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.BD-Grid {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.BD-Grid-Education {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

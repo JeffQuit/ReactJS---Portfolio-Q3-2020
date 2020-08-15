@@ -1,0 +1,218 @@
+/**------------ Variable Roots for CSS ------------ **/
+/*!------------ Header Formatting ------------ !*/
+:root {
+	--header-height: 3rem;
+	--font-semi: 600;
+}
+
+/*!------------ Stylization Colors ------------ !*/
+:root {
+	/*!----- Text Colors -----!*/
+	--first-text: #86c232; /** ----- Lime Green ----- **/
+	--second-text: #61892f; /** ----- Flat Pea Soup Green ----- **/
+	/*!----- Background Colors -----!*/
+	--fist-bkg: #222629; /** ----- Dark Charcole ----- **/
+	--second-bkg: #474b4f; /** ----- Darker mid Grey ----- **/
+	--third-bkg: #6b6e70; /** ----- Light Grey ----- **/
+	/*!----- Additional Colors -----!*/
+	--addititional-color-first: #edeae5; /** ----- Light Smokey Grey ----- **/
+	--addititional-color-second: #ffffff; /** ----- White ----- **/
+	--addititional-color-third: #eeebe6; /** ----- Linen ----- **/
+}
+
+/*!----- Text Formatting and Size -----!*/
+:root {
+	--body-font: 'Muli', sans-serif;
+	--big-font-size: 2rem;
+	--h2-font-size: 1.25rem;
+	--normal-font-size: 0.938rem;
+}
+
+/*!----- Text Formatting and Size Media Query @ Break Point -----!*/
+@media screen and (min-width: 768px) {
+	:root {
+		--big-font-size: 3.5rem;
+		--h2-font-size: 2rem;
+		--normal-font-size: 1rem;
+	}
+}
+
+/*!----- Margin Formatting -----!*/
+:root {
+	--mb-1: 0.5rem;
+	--mb-2: 1rem;
+	--mb-3: 1.5rem;
+	--mb-4: 2rem;
+	--mb-5: 2.5rem;
+	--mb-6: 3rem;
+}
+
+/*!----- Z Index Formatting -----!*/
+:root {
+	--z-back: -10;
+	--z-normal: 1;
+	--z-tooltip: 10;
+	--z-fixed: 50;
+}
+
+/** About Section Classes **/
+
+.BD-Grid-About {
+	max-width: 1024px;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-column-gap: 2rem;
+	width: calc(100% - 2rem);
+	margin-left: var(--mb-2);
+	margin-right: var(--mb-2);
+	justify-items: center;
+	justify-content: space-evenly;
+}
+
+.Section-Title-About {
+	position: relative;
+	font-size: var(--h2-font-size);
+	color: var(--first-color);
+	margin-top: var(--mb-2);
+	margin-bottom: var(--mb-4);
+	text-align: center;
+	top: 1.5rem;
+}
+.Section-Title-About::after {
+	position: absolute;
+	content: '';
+	width: 64px;
+	height: 0.18rem;
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: 2rem;
+	background-color: var(--first-color);
+}
+.Section {
+	padding-top: 3rem;
+	padding-bottom: 2rem;
+}
+
+.About {
+	height: calc(100vh - 3rem); /*! --- Set to 100% to accommodate for div size !*/
+	row-gap: 1rem;
+}
+
+.About-Center-Grid {
+	grid-template-columns: 100%;
+}
+
+.About-Container {
+	position: relative;
+	top: 0px;
+}
+
+.About-Left-Content {
+}
+
+.About-Data {
+	align-self: center;
+	position: absolute;
+	left: 10%; /*! Adjust for positioning of Left Paragraph Elemenets */
+	top: 15%; /*! Adjust for positioning of Left Paragraph Elemenets */
+	z-index: var(--z-normal);
+	width: 80%;
+}
+
+.About-Text-Area {
+	font-size: 12px;
+	line-height: 22px;
+	color: var(--addititional-color-second);
+}
+
+.About-IMG {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 295px;
+	z-index: var(--z-normal);
+	display: none;
+}
+
+.About-Skills {
+	color: var(--first-text);
+}
+
+@media screen and (min-width: 768px) {
+	body,
+	html {
+		height: 100%;
+		width: 100%;
+		margin: 0;
+	}
+
+	.Section {
+		padding-top: 4rem;
+		padding-bottom: 3rem;
+	}
+	.Section-Title-About {
+		margin-bottom: var(--mb-6);
+	}
+	.Section-Title-About::after {
+		width: 80px;
+		top: 3rem;
+	}
+
+	.About {
+		height: calc(100vh - 3rem);
+	}
+	.About-Data {
+		align-self: flex-end;
+	}
+
+	.About-IMG {
+		width: 457px;
+		bottom: 10%;
+	}
+	.About-Center-Grid {
+		grid-template-columns: 100%;
+	}
+	.About-Text-Area {
+		font-size: 12px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.BD-Grid-About {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.About-IMG {
+		right: 5%; /*! -- Change for Position of Image !*/
+		bottom: 27%; /*! Adjust for positioning of Left Paragraph Elemenets */
+		display: block;
+	}
+	.About {
+		height: calc(100vh - 3rem);
+	}
+
+	.About-Data {
+		align-self: center;
+		position: absolute;
+		left: 10%; /*! Adjust for positioning of Left Paragraph Elemenets */
+		top: 20%; /*! Adjust for positioning of Left Paragraph Elemenets */
+		z-index: var(--z-normal);
+		width: 40%;
+	}
+	.Section-Title-About {
+		margin-bottom: var(--mb-6);
+		top: 3rem;
+	}
+	.Section-Title-About::after {
+		width: 80px;
+		top: 3rem;
+	}
+	.About-Center-Grid {
+		grid-template-columns: 60% 40%;
+	}
+	.About-Text-Area {
+		font-size: 16px;
+		line-height: 26px;
+	}
+}

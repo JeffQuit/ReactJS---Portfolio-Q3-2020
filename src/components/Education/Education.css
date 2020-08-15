@@ -1,0 +1,185 @@
+/**------------ Variable Roots for CSS ------------ **/
+/*!------------ Header Formatting ------------ !*/
+:root {
+	--header-height: 3rem;
+	--font-semi: 600;
+}
+
+/*!------------ Stylization Colors ------------ !*/
+:root {
+	/*!----- Text Colors -----!*/
+	--first-text: #86c232; /** ----- Lime Green ----- **/
+	--second-text: #61892f; /** ----- Flat Pea Soup Green ----- **/
+	/*!----- Background Colors -----!*/
+	--fist-bkg: #222629; /** ----- Dark Charcole ----- **/
+	--second-bkg: #474b4f; /** ----- Darker mid Grey ----- **/
+	--third-bkg: #6b6e70; /** ----- Light Grey ----- **/
+	/*!----- Additional Colors -----!*/
+	--addititional-color-first: #edeae5; /** ----- Light Smokey Grey ----- **/
+	--addititional-color-first: #ffffff; /** ----- White ----- **/
+	--addititional-color-first: #eeebe6; /** ----- Linen ----- **/
+}
+
+/*!----- Text Formatting and Size -----!*/
+:root {
+	--body-font: 'Muli', sans-serif;
+	--big-font-size: 2rem;
+	--h2-font-size: 1.25rem;
+	--normal-font-size: 0.938rem;
+}
+
+/*!----- Text Formatting and Size Media Query @ Break Point -----!*/
+@media screen and (min-width: 768px) {
+	:root {
+		--big-font-size: 3.5rem;
+		--h2-font-size: 2rem;
+		--normal-font-size: 1rem;
+	}
+}
+
+/*!----- Margin Formatting -----!*/
+:root {
+	--mb-1: 0.5rem;
+	--mb-2: 1rem;
+	--mb-3: 1.5rem;
+	--mb-4: 2rem;
+	--mb-5: 2.5rem;
+	--mb-6: 3rem;
+}
+
+/*!----- Z Index Formatting -----!*/
+:root {
+	--z-back: -10;
+	--z-normal: 1;
+	--z-tooltip: 10;
+	--z-fixed: 50;
+}
+
+.BD-Grid-Education {
+	max-width: 1024px;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-column-gap: 2rem;
+	width: calc(100% - 2rem);
+	margin-left: var(--mb-2);
+	margin-right: var(--mb-2);
+	justify-items: center;
+	justify-content: space-evenly;
+}
+
+.Section-Title {
+	position: relative;
+	font-size: var(--h2-font-size);
+	color: var(--first-color);
+	margin-top: var(--mb-2);
+	margin-bottom: var(--mb-4);
+	text-align: center;
+}
+.Section-Title::after {
+	position: absolute;
+	content: '';
+	width: 64px;
+	height: 0.18rem;
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: 2rem;
+	background-color: var(--first-color);
+}
+.Section {
+	padding-top: 3rem;
+	padding-bottom: 2rem;
+}
+
+.Education {
+	height: 100%; /*! --- Set to 100% to accommodate for div size !*/
+	row-gap: 1rem;
+}
+
+.Education-Container {
+	row-gap: 2rem;
+}
+.Education-IMG {
+	box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+	overflow: hidden;
+	height: 280px;
+	width: 230px;
+	background-color: #474b4f;
+	position: relative;
+}
+
+.Education-Title-Style {
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	font-weight: 600;
+	line-height: 25px;
+	margin-top: 50px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.Education-Date-Style {
+	position: absolute;
+	color: white;
+	font-size: 12px;
+	text-align: center;
+	font-weight: 400;
+	margin-bottom: 60px;
+	margin-left: 5px;
+	margin-right: 5px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+.Education-IMG:hover {
+	background-color: #6b6e70;
+	transition: background-color 0.5s ease;
+}
+
+.Education-IMG img {
+	transition: 1s;
+	cursor: pointer;
+	height: 36px;
+	display: block;
+	margin: auto;
+	position: relative;
+	top: 25px;
+}
+.Education-IMG img:hover {
+	transform: scale(1.1);
+}
+
+@media screen and (min-width: 768px) {
+	body {
+		margin: 0;
+	}
+	.Section {
+		padding-top: 4rem;
+		padding-bottom: 3rem;
+	}
+	.Section-Title {
+		margin-bottom: var(--mb-6);
+	}
+	.Section-Title::after {
+		width: 80px;
+		top: 3rem;
+	}
+
+	.Education-Container {
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		column-gap: 2rem;
+	}
+
+	.BD-Grid-Education {
+		justify-content: space-evenly;
+		justify-items: center;
+	}
+
+	.Education {
+		height: 100vh; /*! --- Set to 100% to accommodate for div size !*/
+		row-gap: 1rem;
+	}
+}

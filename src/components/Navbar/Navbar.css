@@ -1,0 +1,142 @@
+/*!----- SECTION FOR BOWSER RES WIDTH > 768-----!*/
+.Navbar-Items {
+	background: #222629;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+}
+
+.Navbar-Logo {
+	justify-self: start;
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+.Navbar-Logo-Img {
+	margin-left: 0.5rem;
+	height: 48px;
+}
+
+.Nav-Menu {
+	display: grid;
+	grid-template-columns: repeat(6, auto);
+	grid-gap: 10px;
+	list-style: none;
+	text-align: center;
+	width: 80vw;
+	justify-content: end;
+	margin-right: 1.5rem;
+}
+
+.Nav-Links {
+	color: #86c232;
+	text-decoration: none;
+	padding: 0.5rem 0.75rem;
+}
+
+.Nav-Links:hover {
+	color: white;
+	background-color: #474b4f;
+	transition: all 0.3s ease-out;
+}
+
+.Nav-Links-Resume {
+	color: #86c232;
+	border: 1px solid #86c232;
+	text-decoration: none;
+	padding: 0.5rem 0.75rem;
+}
+
+.Nav-Links-Resume:hover {
+	color: white;
+	background-color: #86c232;
+	border: 1px solid #86c232;
+	transition: all 0.3s ease-out;
+}
+
+.fa-bars {
+	color: #fff;
+}
+
+.fa-times {
+	color: #fff;
+}
+
+.Menu-Icon {
+	display: none;
+}
+
+/*!----- MEDIA QUERY SECTION FOR COLLAPSED BROWSER/Mobile-----!*/
+@media screen and (max-width: 768px) {
+	.Navbar-Items {
+		position: relative;
+		top: -45px;
+	}
+	.Nav-Menu {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 480px;
+		position: absolute;
+		top: 80px;
+		left: -100%;
+		opacity: 1%;
+		transition: all 0.5s ease;
+		margin-bottom: 0px;
+	}
+
+	.Nav-Menu.active {
+		background: #474b4f;
+		left: 0;
+		opacity: 1;
+		transition: all 0.5s ease;
+		z-index: 10;
+	}
+
+	.Nav-Links {
+		text-align: center;
+		padding: 1.5rem;
+		width: 100%;
+		display: table;
+	}
+
+	.Nav-Links:hover {
+		background-color: #61892f;
+		color: white;
+		border-radius: 0;
+	}
+
+	.Nav-Links-Resume {
+		text-align: center;
+		border: none;
+		padding: 1.5rem;
+		width: 100%;
+		display: table;
+	}
+
+	.Nav-Links-Resume:hover {
+		background-color: #61892f;
+		border: none;
+		color: white;
+		border-radius: 0;
+	}
+
+	.Navbar-Logo {
+		position: absolute;
+
+		left: 25px;
+		transform: translate(25% 50%);
+	}
+
+	.Menu-Icon {
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		transform: translate(-100%, 60%);
+		font-size: 1.8rem;
+		cursor: pointer;
+	}
+}

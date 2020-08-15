@@ -1,0 +1,77 @@
+
+
+To Do for Portfilio:
+
+React Component Order:
+
+Navbar
+About Section
+Work Example Section
+    |- Featured Work
+    |- Additional Work
+Education
+Contact
+Resume Button:
+
+Break Point - :
+768px for Tablet & Mobile
+Rows converge to 1 row
+
+Navbar:
+Status - Completed
+Updates/Tweaks Needed:
+☐ | Check That Margins Match Content Containers
+☐ | Host Finished Resume That Pulls Up In PDF Format When Button is Clicked
+
+Work Example Section:
+☐ | Build Template 
+☐ | 
+☐ | 
+☐ | 
+☐ | 
+☐ | Ensure Responsive at Break Point
+
+Education:
+☐ | 
+☐ | 
+☐ | 
+☐ | 
+☐ | 
+☐ | Ensure Responsive at Break Point
+
+Contact:
+☐ | Build Form
+☐ | Contact Jeff Copywriting
+☐ | Connect Form To Email API
+☐ | Ensure Responsive at Break Point
+
+Footer:
+☐ | Build Footer
+☐ | Copy: 
+
+
+Symbol Copy Paste:
+☐ | Unchecked Box
+☒ | Checked Box
+✘ | Big X
+✓ | Big Tick
+
+
+Design Aspects:
+
+Color Palet:
+https://visme.co/blog/wp-content/uploads/2016/09/website27.jpg - Gorgeous Contrast via https://visme.co/blog/website-color-schemes/
+
+CSS Colors:
+Colors:
+#61892F - Flat Pea Soup Green
+#86C232 - Lime Green
+#222629 - Charcole 
+#474B4F - Darker mid Grey
+#6B6E70 - Light Grey
+
+Additional Colors:
+#EDEAE5 - Light Smokey Grey
+#FFFFFF - White
+#EEEBE6 - Linen
+
