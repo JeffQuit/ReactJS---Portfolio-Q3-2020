@@ -1,54 +1,35 @@
-import React, { Component } from 'react';
+import React from 'react';
+import emailjs from 'emailjs-com';
 import './Contact.css';
-import axios from 'axios';
 
-export default class Contact extends Component {
-	constructor() {
-		super();
-
-		this.state = {
-			name: '',
-			email: '',
-			message: '',
-		};
-
-		this.handleChange = this.handleChange.bind(this);
-		this.handleSubmit = this.handleChange.bind(this);
-	}
-
-	handleChange = (e) => {
-		this.setState({
-			[e.target.name]: e.target.value,
-		});
-	};
-
-	async handleSubmit(e) {
+export default function Contact() {
+	function sendEmail(e) {
 		e.preventDefault();
-		const { name, email, message } = this.state;
 
-		const form = await axios.post('/api/form', {
-			name,
-			email,
-			message,
-		});
-	}
-
-	render() {
-		return (
-			<div>
-				<section class="Contact Section" id="contact">
-					<h2 class="Section-Title">Contact</h2>
-
-					<div class="Contact-Container BD-Grid">
-						<form onSubmit={this.handleSubmit} action="" class="Contact-Form">
-							<input name="name" type="text" placeholder="Name" class="Contact-Input" onChange={this.handleChange} />
-							<input name="email" type="email" placeholder="Email" class="Contact-Input" onChange={this.handleChange} />
-							<textarea name="message" placeholder="Type Message Here" id="" cols="0" rows="10" class="Contact-Input" onChange={this.handleChange}></textarea>
-							<input type="submit" value="Send" class="Contact-Button button" />
-						</form>
-					</div>
-				</section>
-			</div>
+		emailjs.sendForm('gmail', 'jeffquittmanwebsitecontact', e.target, 'user_rcoWw7c44IgwuiOYNvtLb').then(
+			(result) => {
+				console.log(result.text);
+			},
+			(error) => {
+				console.log(error.text);
+			}
 		);
+		e.target.reset();
 	}
+	return (
+		<div>
+			<section className="Contact Section" id="contact">
+				<h2 className="Section-Title">Contact</h2>
+
+				<div className="Contact-Container BD-Grid">
+					<form onSubmit={sendEmail} action="" className="contact_form_class Contact-Form">
+						<input name="name" type="text" placeholder="Name" className="Contact-Input" />
+						<input name="email" type="email" placeholder="Email" className="Contact-Input" />
+						<textarea name="message" placeholder="Type Message Here" id="" cols="0" rows="10" className="Contact-Input"></textarea>
+						<input type="submit" value="Send" className="Contact-Button button" />
+					</form>
+				</div>
+			</section>
+		</div>
+	);
 }

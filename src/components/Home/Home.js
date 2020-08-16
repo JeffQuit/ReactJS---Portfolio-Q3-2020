@@ -13,20 +13,21 @@ export default class Home extends Component {
 						<div className="Home-Data">
 							<h1 className="Home-Title">
 								<span className="Home-Title-Color">Jeff Quittman</span>
-								<br /> Full Stack Engineer
+								<br />
 							</h1>
+							<p className="Home-Paragraph">Emerging full stack engineer with a background in functional and visual design. </p>
+							<br />
 							<a href="#contact" className="button">
 								Contact
 							</a>
-							<p></p>
 						</div>
 						<br />
 						<div className="Home-Social">
 							<a href="https://github.com/JeffQuit" className="Home-Social-Icon">
-								<i class="fab fa-github fa-3x socialIcons" />
+								<i className="fab fa-github fa-3x socialIcons" />
 							</a>
 							<a href="https://www.linkedin.com/in/jeffquittman/" className="Home-Social-Icon">
-								<i class="fab fa-linkedin fa-3x socialIcons" />
+								<i className="fab fa-linkedin fa-3x socialIcons" />
 							</a>
 						</div>
 					</div>

@@ -100,8 +100,11 @@
 	row-gap: 2rem;
 }
 .AddWork-IMG {
-	box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+	box-shadow: 5px 10px 8px #212426;
 	overflow: hidden;
+	position: relative;
+	display: flex;
+	justify-content: center;
 }
 .AddWork-IMG img {
 	transition: 1s;
@@ -111,6 +114,250 @@
 }
 .AddWork-IMG img:hover {
 	transform: scale(1.1);
+}
+
+.Tnail-CSSADD {
+	position: absolute;
+	bottom: 10px;
+	font-size: 18px;
+}
+
+.Tnail-CSSADD:hover {
+	color: var(--first-text);
+}
+
+.ModalADD-CSS {
+	z-index: 5;
+	height: 85%;
+	width: 90%;
+	opacity: 1;
+	background: #474b4f;
+	border: 1px solid #6b6e70;
+	position: fixed;
+	top: 60px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	box-shadow: 5px 10px 8px #212426;
+}
+
+.ModalADD-BTN {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+	float: right;
+	margin: 10px;
+}
+
+.ModalADD-BTN-Icon {
+	color: red;
+	background: transparent;
+	font-size: 20px;
+}
+
+.ModalADD-Title {
+	font-size: 13px;
+	padding-bottom: 5px;
+	margin-left: 35px;
+	margin-right: 20px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	text-align: center;
+	border-bottom: 1px solid #6b6e70;
+}
+
+.ModalADD-Description {
+	font-size: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 2px;
+	text-align: center;
+}
+
+.ModalADD-GIF {
+	height: 100px;
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	box-shadow: 5px 5px 8px #212426;
+}
+
+.ModalADD-Stack-Header {
+	text-align: center;
+	font-size: 16px;
+	margin-left: 35px;
+	margin-right: 35px;
+	margin-bottom: 5px;
+}
+
+.ModalADD-Stack-List {
+	font-size: 10px;
+	text-align: center;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+}
+
+.ModalADD-App-Links {
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	bottom: 4%;
+}
+
+.ModalADD-Github-Link {
+	text-decoration: none;
+}
+
+.ModalADD-Deployed-Link {
+	text-decoration: none;
+}
+
+.ModalADD-Link-Icon {
+	margin-right: 5px;
+	margin-left: 18px;
+	font-size: 35px;
+}
+
+.ModalADD-Link-Icon.PrivateRepoADD {
+	color: red;
+	pointer-events: none;
+	cursor: default;
+	text-decoration: none;
+}
+
+.ModalADD-Link-Icon.PublicRepoADD {
+	color: white;
+}
+
+.PublicRepoADD:hover {
+	color: #86c232;
+}
+
+.ModalADD-Private-Note {
+	font-size: 10px;
+	text-align: center;
+	color: red;
+	font-weight: 500;
+	position: relative;
+	margin-top: 10px;
+}
+
+@media screen and (min-width: 420px) {
+	.ModalADD-CSS {
+		z-index: 5;
+		height: 85%;
+		width: 90%;
+		opacity: 1;
+		background: #474b4f;
+		border: 1px solid #6b6e70;
+		position: fixed;
+		top: 60px;
+		left: 50%;
+		transform: translate(-50%, 0);
+		box-shadow: 5px 10px 8px #212426;
+	}
+
+	.ModaADD-BTN {
+		background: none;
+		color: inherit;
+		border: none;
+		padding: 0;
+		font: inherit;
+		cursor: pointer;
+		outline: inherit;
+		float: right;
+		margin: 10px;
+	}
+
+	.ModalADD-BTN-Icon {
+		color: red;
+		background: transparent;
+		font-size: 20px;
+	}
+
+	.ModalADD-Title {
+		font-size: 20px;
+		padding-bottom: 5px;
+		margin-left: 35px;
+		margin-right: 20px;
+		margin-top: 10px;
+		margin-bottom: 20px;
+		text-align: center;
+		border-bottom: 1px solid #6b6e70;
+	}
+
+	.ModalADD-Description {
+		font-size: 12px;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-bottom: 2px;
+		text-align: center;
+	}
+
+	.ModalADD-GIF {
+		height: 100px;
+		position: relative;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+		box-shadow: 5px 5px 8px #212426;
+	}
+
+	.ModalADD-Stack-Header {
+		text-align: center;
+		font-size: 16px;
+		margin-left: 35px;
+		margin-right: 35px;
+		margin-bottom: 5px;
+	}
+
+	.ModalADD-Stack-List {
+		font-size: 12px;
+		text-align: center;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-bottom: 5px;
+	}
+
+	.ModalADD-App-Links {
+		position: absolute;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		transform: translateX(-50%);
+		bottom: 4%;
+	}
+
+	.ModalADD-Github-Link {
+		text-decoration: none;
+	}
+
+	.ModalADD-Deployed-Link {
+		text-decoration: none;
+	}
+
+	.ModalADD-Link-Icon {
+		margin-right: 20px;
+		margin-left: 20px;
+		font-size: 50px;
+		color: white;
+	}
+
+	.ModalADD-Private-Note {
+		font-size: 14px;
+		text-align: center;
+		color: red;
+		font-weight: 500;
+		position: relative;
+		margin-top: 10px;
+	}
 }
 
 @media screen and (min-width: 768px) {
@@ -137,5 +384,182 @@
 
 	.BD-Grid-Add {
 		justify-content: space-evenly;
+	}
+
+	.ModalADD-CSS {
+		z-index: 5;
+		height: 75%;
+		width: 90%;
+		opacity: 1;
+		background: #474b4f;
+		border: 1px solid #6b6e70;
+		position: fixed;
+		top: 60px;
+		left: 50%;
+		transform: translate(-50%, 0);
+		box-shadow: 5px 10px 8px #212426;
+	}
+
+	.ModalADD-BTN {
+		background: none;
+		color: inherit;
+		border: none;
+		padding: 0;
+		font: inherit;
+		cursor: pointer;
+		outline: inherit;
+		float: right;
+		margin: 10px;
+	}
+
+	.ModalADD-BTN-Icon {
+		color: red;
+		background: transparent;
+		font-size: 20px;
+	}
+
+	.ModalADD-Title {
+		font-size: 30px;
+		padding-bottom: 5px;
+		margin-left: 35px;
+		margin-right: 20px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		text-align: center;
+		border-bottom: 1px solid #6b6e70;
+	}
+
+	.ModalADD-Description {
+		font-size: 14px;
+		margin-left: 35px;
+		margin-right: 35px;
+		margin-bottom: 5px;
+		text-align: center;
+	}
+
+	.ModalADD-GIF {
+		height: 200px;
+		position: relative;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+		box-shadow: 5px 5px 8px #212426;
+	}
+
+	.ModalADD-Stack-Header {
+		text-align: center;
+		margin-left: 35px;
+		margin-right: 35px;
+		margin-bottom: 5px;
+	}
+
+	.ModalADD-Stack-List {
+		font-size: 14px;
+		text-align: center;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-bottom: 5px;
+	}
+
+	.ModalADD-App-Links {
+		position: absolute;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		transform: translateX(-50%);
+		bottom: 4%;
+	}
+
+	.ModalADD-Github-Link {
+		text-decoration: none;
+	}
+
+	.ModalADD-Deployed-Link {
+		text-decoration: none;
+	}
+
+	.ModalADD-Link-Icon {
+		margin-right: 20px;
+		margin-left: 20px;
+		font-size: 50px;
+		color: white;
+	}
+
+	.ModalADD-Private-Note {
+		font-size: 14px;
+		text-align: center;
+		color: red;
+		font-weight: 500;
+		position: relative;
+		margin-top: 10px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.ModalADD-Title {
+		font-size: 35px;
+		padding-bottom: 10px;
+		margin-left: 35px;
+		margin-right: 20px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		text-align: center;
+		border-bottom: 1px solid #6b6e70;
+	}
+
+	.ModalADD-Description {
+		font-size: 16px;
+		margin-left: 60px;
+		margin-right: 60px;
+		margin-bottom: 5px;
+		text-align: center;
+	}
+
+	.ModalADD-GIF {
+		height: 250px;
+		position: relative;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 25px;
+		box-shadow: 5px 5px 8px #212426;
+	}
+
+	.ModalADD-Stack-Header {
+		text-align: center;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-bottom: 10px;
+	}
+
+	.ModalADD-Stack-List {
+		font-size: 16px;
+		text-align: center;
+		margin-left: 60px;
+		margin-right: 60px;
+		margin-bottom: 5px;
+	}
+
+	.ModalADD-App-Links {
+		position: absolute;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		transform: translateX(-50%);
+		bottom: 4%;
+	}
+
+	.ModalADD-Github-Link {
+		text-decoration: none;
+	}
+
+	.ModalADD-Deployed-Link {
+		text-decoration: none;
+	}
+
+	.ModalADD-Link-Icon {
+		margin-right: 20px;
+		margin-left: 20px;
+		font-size: 50px;
+		color: white;
 	}
 }

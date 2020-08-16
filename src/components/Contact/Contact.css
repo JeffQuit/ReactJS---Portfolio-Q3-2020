@@ -118,21 +118,35 @@
 		margin: 0;
 	}
 	.Section {
-		padding-top: 4rem;
+		padding-top: 3rem;
 		padding-bottom: 3rem;
 	}
 	.Section-Title {
-		margin-bottom: var(--mb-6);
+		margin-bottom: var(--mb-4);
 	}
 	.Section-Title::after {
 		width: 80px;
 		top: 3rem;
+	}
+	.Contact {
+		height: 100%;
+		row-gap: 1rem;
 	}
 	.Contact-Form {
 		width: 360px;
 	}
 	.Contact-Container {
 		justify-items: center;
+	}
+	.Contact-Input {
+		width: 100%;
+		font-size: var(--normal-font-size);
+		font-weight: var(--font-semi);
+		padding: 1rem;
+		border-radius: 0.5rem;
+		border: 1.5px solid var(--second-color);
+		outline: none;
+		margin-bottom: var(--mb-4);
 	}
 }
 

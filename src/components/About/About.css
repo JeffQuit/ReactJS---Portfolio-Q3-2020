@@ -108,9 +108,6 @@
 	top: 0px;
 }
 
-.About-Left-Content {
-}
-
 .About-Data {
 	align-self: center;
 	position: absolute;
@@ -130,9 +127,13 @@
 	position: absolute;
 	right: 0;
 	bottom: 0;
-	width: 295px;
+	width: 65%;
 	z-index: var(--z-normal);
 	display: none;
+}
+
+.About-IMG-Tag {
+	height: 200px;
 }
 
 .About-Skills {
@@ -167,14 +168,18 @@
 	}
 
 	.About-IMG {
-		width: 457px;
-		bottom: 10%;
+		width: 60%;
+		bottom: 0;
+	}
+
+	.About-IMG-Tag {
+		height: 250px;
 	}
 	.About-Center-Grid {
 		grid-template-columns: 100%;
 	}
 	.About-Text-Area {
-		font-size: 12px;
+		font-size: 14px;
 	}
 }
 
@@ -184,9 +189,14 @@
 		margin-right: auto;
 	}
 	.About-IMG {
+		width: 457px;
 		right: 5%; /*! -- Change for Position of Image !*/
-		bottom: 27%; /*! Adjust for positioning of Left Paragraph Elemenets */
+		bottom: 29%; /*! Adjust for positioning of Left Paragraph Elemenets */
 		display: block;
+	}
+
+	.About-IMG-Tag {
+		height: 400px;
 	}
 	.About {
 		height: calc(100vh - 3rem);

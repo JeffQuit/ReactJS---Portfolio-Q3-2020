@@ -100,9 +100,17 @@
 	row-gap: 2rem;
 }
 .Work-IMG {
-	box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+	box-shadow: 5px 10px 8px #212426;
 	overflow: hidden;
+	position: relative;
+	display: flex;
+	justify-content: center;
 }
+
+.Work-IMG:hover {
+	color: var(--first-text);
+}
+
 .Work-IMG img {
 	transition: 1s;
 	cursor: pointer;
@@ -112,15 +120,250 @@
 .Work-IMG img:hover {
 	transform: scale(1.1);
 }
+
+.Tnail-CSS {
+	position: absolute;
+	bottom: 18px;
+
+	font-size: 24px;
+}
+
+.Tnail-CSS:hover {
+	color: var(--first-text);
+}
+
 .Modal-CSS {
 	z-index: 5;
-	height: 300px;
-	width: 400px;
+	height: 85%;
+	width: 90%;
 	opacity: 1;
-	background-color: var(--first-color);
-	border: 1px solid var(--first-text);
+	background: #474b4f;
+	border: 1px solid #6b6e70;
+	position: fixed;
+	top: 60px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	box-shadow: 5px 10px 8px #212426;
+}
+
+.Modal-BTN {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+	float: right;
+	margin: 10px;
+}
+
+.Modal-BTN-Icon {
+	color: red;
+	background: transparent;
+	font-size: 20px;
+}
+
+.Modal-Title {
+	font-size: 13px;
+	padding-bottom: 5px;
+	margin-left: 35px;
+	margin-right: 20px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	text-align: center;
+	border-bottom: 1px solid #6b6e70;
+}
+
+.Modal-Description {
+	font-size: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 2px;
+	text-align: center;
+}
+
+.Modal-GIF {
+	height: 100px;
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	box-shadow: 5px 5px 8px #212426;
+}
+
+.Modal-Stack-Header {
+	text-align: center;
+	font-size: 16px;
+	margin-left: 35px;
+	margin-right: 35px;
+	margin-bottom: 5px;
+}
+
+.Modal-Stack-List {
+	font-size: 10px;
+	text-align: center;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+}
+
+.Modal-App-Links {
 	position: absolute;
-	margin: auto;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	bottom: 4%;
+}
+
+.Modal-Github-Link {
+	text-decoration: none;
+}
+
+.Modal-Deployed-Link {
+	text-decoration: none;
+}
+
+.Modal-Link-Icon {
+	margin-right: 5px;
+	margin-left: 18px;
+	font-size: 35px;
+}
+
+.Modal-Link-Icon.PrivateRepo {
+	color: red;
+	pointer-events: none;
+	cursor: default;
+	text-decoration: none;
+}
+
+.Modal-Link-Icon.PublicRepo {
+	color: white;
+}
+
+.PublicRepo:hover {
+	color: #86c232;
+}
+
+.Modal-Private-Note {
+	font-size: 10px;
+	text-align: center;
+	color: red;
+	font-weight: 500;
+	position: relative;
+	margin-top: 10px;
+}
+
+@media screen and (min-width: 420px) {
+	.Modal-CSS {
+		z-index: 5;
+		height: 85%;
+		width: 90%;
+		opacity: 1;
+		background: #474b4f;
+		border: 1px solid #6b6e70;
+		position: fixed;
+		top: 60px;
+		left: 50%;
+		transform: translate(-50%, 0);
+		box-shadow: 5px 10px 8px #212426;
+	}
+
+	.Modal-BTN {
+		background: none;
+		color: inherit;
+		border: none;
+		padding: 0;
+		font: inherit;
+		cursor: pointer;
+		outline: inherit;
+		float: right;
+		margin: 10px;
+	}
+
+	.Modal-BTN-Icon {
+		color: red;
+		background: transparent;
+		font-size: 20px;
+	}
+
+	.Modal-Title {
+		font-size: 20px;
+		padding-bottom: 5px;
+		margin-left: 35px;
+		margin-right: 20px;
+		margin-top: 10px;
+		margin-bottom: 20px;
+		text-align: center;
+		border-bottom: 1px solid #6b6e70;
+	}
+
+	.Modal-Description {
+		font-size: 12px;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-bottom: 2px;
+		text-align: center;
+	}
+
+	.Modal-GIF {
+		height: 100px;
+		position: relative;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+		box-shadow: 5px 5px 8px #212426;
+	}
+
+	.Modal-Stack-Header {
+		text-align: center;
+		font-size: 16px;
+		margin-left: 35px;
+		margin-right: 35px;
+		margin-bottom: 5px;
+	}
+
+	.Modal-Stack-List {
+		font-size: 12px;
+		text-align: center;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-bottom: 5px;
+	}
+
+	.Modal-App-Links {
+		position: absolute;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		transform: translateX(-50%);
+		bottom: 4%;
+	}
+
+	.Modal-Github-Link {
+		text-decoration: none;
+	}
+
+	.Modal-Deployed-Link {
+		text-decoration: none;
+	}
+
+	.Modal-Link-Icon {
+		margin-right: 20px;
+		margin-left: 20px;
+		font-size: 50px;
+		color: white;
+	}
+
+	.Modal-Private-Note {
+		font-size: 14px;
+		text-align: center;
+		color: red;
+		font-weight: 500;
+		position: relative;
+		margin-top: 10px;
+	}
 }
 
 @media screen and (min-width: 768px) {
@@ -147,5 +390,187 @@
 
 	.BD-Grid {
 		justify-content: space-evenly;
+	}
+
+	.Portfolio {
+		height: 55vh; /*! --- Set to 100% to accommodate for div size !*/
+		row-gap: 1rem;
+	}
+
+	.Modal-CSS {
+		z-index: 5;
+		height: 75%;
+		width: 90%;
+		opacity: 1;
+		background: #474b4f;
+		border: 1px solid #6b6e70;
+		position: fixed;
+		top: 60px;
+		left: 50%;
+		transform: translate(-50%, 0);
+		box-shadow: 5px 10px 8px #212426;
+	}
+
+	.Modal-BTN {
+		background: none;
+		color: inherit;
+		border: none;
+		padding: 0;
+		font: inherit;
+		cursor: pointer;
+		outline: inherit;
+		float: right;
+		margin: 10px;
+	}
+
+	.Modal-BTN-Icon {
+		color: red;
+		background: transparent;
+		font-size: 20px;
+	}
+
+	.Modal-Title {
+		font-size: 30px;
+		padding-bottom: 5px;
+		margin-left: 35px;
+		margin-right: 20px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		text-align: center;
+		border-bottom: 1px solid #6b6e70;
+	}
+
+	.Modal-Description {
+		font-size: 14px;
+		margin-left: 35px;
+		margin-right: 35px;
+		margin-bottom: 5px;
+		text-align: center;
+	}
+
+	.Modal-GIF {
+		height: 200px;
+		position: relative;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+		box-shadow: 5px 5px 8px #212426;
+	}
+
+	.Modal-Stack-Header {
+		text-align: center;
+		margin-left: 35px;
+		margin-right: 35px;
+		margin-bottom: 5px;
+	}
+
+	.Modal-Stack-List {
+		font-size: 14px;
+		text-align: center;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-bottom: 5px;
+	}
+
+	.Modal-App-Links {
+		position: absolute;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		transform: translateX(-50%);
+		bottom: 4%;
+	}
+
+	.Modal-Github-Link {
+		text-decoration: none;
+	}
+
+	.Modal-Deployed-Link {
+		text-decoration: none;
+	}
+
+	.Modal-Link-Icon {
+		margin-right: 20px;
+		margin-left: 20px;
+		font-size: 50px;
+		color: white;
+	}
+
+	.Modal-Private-Note {
+		font-size: 14px;
+		text-align: center;
+		color: red;
+		font-weight: 500;
+		position: relative;
+		margin-top: 10px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.Modal-Title {
+		font-size: 35px;
+		padding-bottom: 10px;
+		margin-left: 35px;
+		margin-right: 20px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		text-align: center;
+		border-bottom: 1px solid #6b6e70;
+	}
+
+	.Modal-Description {
+		font-size: 16px;
+		margin-left: 60px;
+		margin-right: 60px;
+		margin-bottom: 5px;
+		text-align: center;
+	}
+
+	.Modal-GIF {
+		height: 250px;
+		position: relative;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 25px;
+		box-shadow: 5px 5px 8px #212426;
+	}
+
+	.Modal-Stack-Header {
+		text-align: center;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-bottom: 10px;
+	}
+
+	.Modal-Stack-List {
+		font-size: 16px;
+		text-align: center;
+		margin-left: 60px;
+		margin-right: 60px;
+		margin-bottom: 5px;
+	}
+
+	.Modal-App-Links {
+		position: absolute;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		transform: translateX(-50%);
+		bottom: 4%;
+	}
+
+	.Modal-Github-Link {
+		text-decoration: none;
+	}
+
+	.Modal-Deployed-Link {
+		text-decoration: none;
+	}
+
+	.Modal-Link-Icon {
+		margin-right: 20px;
+		margin-left: 20px;
+		font-size: 50px;
+		color: white;
 	}
 }

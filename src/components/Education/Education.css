@@ -168,9 +168,10 @@
 	}
 
 	.Education-Container {
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(2, 1fr);
 		column-gap: 2rem;
+		
 	}
 
 	.BD-Grid-Education {
@@ -178,8 +179,18 @@
 		justify-items: center;
 	}
 
+	
+
 	.Education {
 		height: 100vh; /*! --- Set to 100% to accommodate for div size !*/
 		row-gap: 1rem;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.Education-Container {
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		column-gap: 2rem;
 	}
 }

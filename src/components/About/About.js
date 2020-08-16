@@ -18,27 +18,27 @@ export default class About extends Component {
 							<br />
 							<p className="About-Text-Area">In his free time, Jeff is an avid paintball player where he maintains a collection of vintage paintball markers. As a part-time job, he works at Ambush Paintball Park in Moorpark, CA.</p>
 							<br />
-							<p class="About-Text-Area">Jeff's development toolbox includes:</p>
+							<p className="About-Text-Area">Jeff's development toolbox includes:</p>
 							<br />
-							<p class="About-Text-Area">
-								<b className="About-Skills">Languages:</b> JavaScript, TypeScript, CSS, HTML
+							<p className="About-Text-Area">
+								<b className="About-Skills">Languages: </b> JavaScript, TypeScript, CSS, HTML
 							</p>
-							<p class="About-Text-Area">
-								<b className="About-Skills">Frameworks & Libraries:</b> JQuery, React, Node.js, Express, Bootstrap
+							<p className="About-Text-Area">
+								<b className="About-Skills">Frameworks & Libraries:</b> JQuery, React, Node.js, Express
 							</p>
-							<p class="About-Text-Area">
+							<p className="About-Text-Area">
 								<b className="About-Skills">Databases:</b> MySQL, PostgreSQL, MongoDB
 							</p>
-							<p class="About-Text-Area">
+							<p className="About-Text-Area">
 								<b className="About-Skills">Tools & Platforms:</b> Git, Heroku, Firebase, JIRA, Trello
 							</p>
-							<p class="About-Text-Area">
+							<p className="About-Text-Area">
 								<b className="About-Skills">Design: </b> Photoshop, Illustrator, Maya, Fusion360, Solidworks
 							</p>
 						</div>
 						<br />
 						<div className="About-IMG">
-							<img src="./imgs/JeffHeadshot1.png" alt="JQHeadshot" />
+							<img className="About-IMG-Tag" src="./imgs/JeffHeadshot1.png" alt="JQHeadshot" />
 						</div>
 					</div>
 				</section>
