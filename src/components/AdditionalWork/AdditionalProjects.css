@@ -230,6 +230,7 @@
 	pointer-events: none;
 	cursor: default;
 	text-decoration: none;
+	opacity: 0.5;
 }
 
 .ModalADD-Link-Icon.PublicRepoADD {
@@ -252,8 +253,8 @@
 @media screen and (min-width: 420px) {
 	.ModalADD-CSS {
 		z-index: 5;
-		height: 85%;
-		width: 90%;
+		height: 65%;
+		width: 70%;
 		opacity: 1;
 		background: #474b4f;
 		border: 1px solid #6b6e70;
@@ -302,7 +303,7 @@
 	}
 
 	.ModalADD-GIF {
-		height: 100px;
+		height: 140px;
 		position: relative;
 		display: block;
 		margin-left: auto;
@@ -389,7 +390,7 @@
 	.ModalADD-CSS {
 		z-index: 5;
 		height: 75%;
-		width: 90%;
+		width: 65%;
 		opacity: 1;
 		background: #474b4f;
 		border: 1px solid #6b6e70;
@@ -496,6 +497,20 @@
 }
 
 @media screen and (min-width: 1024px) {
+	.ModalADD-CSS {
+		z-index: 5;
+		height: 83%;
+		width: 700px;
+		opacity: 1;
+		background: #474b4f;
+		border: 1px solid #6b6e70;
+		position: fixed;
+		top: 60px;
+		left: 50%;
+		transform: translate(-50%, 0);
+		box-shadow: 5px 10px 8px #212426;
+	}
+
 	.ModalADD-Title {
 		font-size: 35px;
 		padding-bottom: 10px;
