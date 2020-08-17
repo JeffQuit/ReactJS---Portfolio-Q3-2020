@@ -259,13 +259,13 @@
 @media screen and (min-width: 420px) {
 	.Modal-CSS {
 		z-index: 5;
-		height: 65%;
-		width: 70%;
+		height: 85%;
+		width: 80%;
 		opacity: 1;
 		background: #474b4f;
 		border: 1px solid #6b6e70;
 		position: fixed;
-		top: 60px;
+		top: 50px;
 		left: 50%;
 		transform: translate(-50%, 0);
 		box-shadow: 5px 10px 8px #212426;
