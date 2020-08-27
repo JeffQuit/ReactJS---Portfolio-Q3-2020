@@ -28,7 +28,7 @@ export default function Portfolio() {
 
 	return (
 		<div className="Portfolio Section" id="portfolio" ref={outside}>
-			<h2 className="Section-Title">Featured Projects</h2>
+			<h2 className="Section-Title">Client Projects</h2>
 			<div className="Portfolio-Container BD-Grid">
 				{FeaturedProjects.map((item, index) => {
 					return (
@@ -44,7 +44,8 @@ export default function Portfolio() {
 								id={item.id}
 								className={item.cName}
 							>
-								<img id={item.id} src={item.src} alt={item.title} />
+								<img id={item.id} src={item.src} alt={item.title} className={item.imgClass} />
+
 								<h3 className={item.tNailClass} id={item.id}>
 									{item.tNailName}
 								</h3>

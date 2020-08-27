@@ -13,7 +13,7 @@ export default function AdditionalProjects() {
 
 	return (
 		<div className="AdditionalWork Section" id="additionalwork">
-			<h2 className="Section-Title">Additional Projects</h2>
+			<h2 className="Section-Title">Personal Projects</h2>
 			<div className="AdditionalWork-Container BD-Grid">
 				{AdditionalProjectsList.map((item, index) => {
 					return (
@@ -28,7 +28,8 @@ export default function AdditionalProjects() {
 							id={item.id}
 							className={item.cName}
 						>
-							<img id={item.id} src={item.src} alt={item.title} />
+							<img id={item.id} src={item.src} alt={item.title} className={item.imgClass} />
+
 							<h3 className="Tnail-CSSADD" id={item.id}>
 								{item.tNailName}
 							</h3>

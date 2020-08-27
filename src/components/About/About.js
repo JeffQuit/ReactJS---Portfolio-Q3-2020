@@ -9,16 +9,13 @@ export default class About extends Component {
 					<h2 className="Section-Title-About">About Jeff Quittman</h2>
 					<div className="About-Center-Grid">
 						<div className="About-Data">
-							<p className="About-Text-Area">Jeff Quittman is an emerging full stack software developer with a diverse background in Graphic Design, 3D CAD Modeling, Video-game Level Design, Photography, and much much more.</p>
+							<p className="About-Text-Area">Welcome to my Portfolio! Im Jeff and leveredge software development to solve every day problems and make life easier!</p>
 							<br />
-							<p className="About-Text-Area">
-								Jeff is currently the Director of Program Success at Tuition.io, the innovator and industry leader in the student loan repayment employee benefit. As a natural problem solver and creator, Jeff approaches each problem with curiosity and multiple problem solving
-								techniques that allow him to resolve any issue or overcome any obstacle in his path.
-							</p>
+							<p className="About-Text-Area">I dabble in graphic design, 3d design, CAD/CAM, and Videogame Design.</p>
 							<br />
-							<p className="About-Text-Area">In his free time, Jeff is an avid paintball player where he maintains a collection of vintage paintball markers. As a part-time job, he works at Ambush Paintball Park in Moorpark, CA.</p>
+							<p className="About-Text-Area">When im not working on projects, I am an avid paintball player and enjoy restoring vintage paintball markers. Sometimes I even work at Ambush Paintball Park in Moorpark, CA. </p>
 							<br />
-							<p className="About-Text-Area">Jeff's development toolbox includes:</p>
+							<p className="About-Text-Area">My current development toolbox includes:</p>
 							<br />
 							<p className="About-Text-Area">
 								<b className="About-Skills">Languages: </b> JavaScript, TypeScript, CSS, HTML

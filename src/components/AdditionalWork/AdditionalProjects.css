@@ -16,8 +16,8 @@
 	--third-bkg: #6b6e70; /** ----- Light Grey ----- **/
 	/*!----- Additional Colors -----!*/
 	--addititional-color-first: #edeae5; /** ----- Light Smokey Grey ----- **/
-	--addititional-color-first: #ffffff; /** ----- White ----- **/
-	--addititional-color-first: #eeebe6; /** ----- Linen ----- **/
+	--addititional-color-second: #ffffff; /** ----- White ----- **/
+	--addititional-color-third: #eeebe6; /** ----- Linen ----- **/
 }
 
 /*!----- Text Formatting and Size -----!*/
@@ -106,28 +106,64 @@
 	display: flex;
 	justify-content: center;
 }
-.AddWork-IMG img {
-	transition: 1s;
+.AddWork-IMG {
 	cursor: pointer;
-	height: 250px;
-	width: 250px;
-}
-.AddWork-IMG img:hover {
-	transform: scale(1.1);
+	height: 330px;
+	width: 330px;
 }
 
 .Tnail-CSSADD {
 	position: absolute;
 	bottom: 10px;
-	font-size: 18px;
+	font-size: 20px;
+	font-weight: 500;
+	z-index: 7;
+	text-align: center;
+	background: var(--first-text);
+	padding: 10px 30px;
+	border-radius: 15px;
+	box-shadow: 5px 2px 8px #212426;
+	z-index: 7;
 }
 
 .Tnail-CSSADD:hover {
 	color: var(--first-text);
+	background: var(--addititional-color-second);
+	border: 1px solid var(--first-text);
+}
+
+.Work-IMG-CSS-Style-ADD {
+	position: absolute;
+	top: 0;
+	height: 330px;
+	left: 0px;
+	border: 1px solid var(--first-color);
+	z-index: 5;
+}
+
+.Work-IMG-Bottom-Button-ADD {
+	position: absolute;
+	bottom: 15px;
+	font-size: 16px;
+	font-weight: 500;
+	background: var(--second-text);
+	padding: 10px 40px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 8px #212426;
+	z-index: 7;
+}
+
+.CropBlockCSS-ADD {
+	position: absolute;
+	width: 100%;
+	height: 120px;
+	background-color: var(--second-bkg);
+	bottom: 0;
+	z-index: 2;
 }
 
 .ModalADD-CSS {
-	z-index: 5;
+	z-index: 10;
 	height: 85%;
 	width: 90%;
 	opacity: 1;
@@ -252,7 +288,7 @@
 
 @media screen and (min-width: 420px) {
 	.ModalADD-CSS {
-		z-index: 5;
+		z-index: 15;
 		height: 85%;
 		width: 80%;
 		opacity: 1;
@@ -388,7 +424,7 @@
 	}
 
 	.ModalADD-CSS {
-		z-index: 5;
+		z-index: 15;
 		height: 75%;
 		width: 65%;
 		opacity: 1;
@@ -498,7 +534,7 @@
 
 @media screen and (min-width: 1024px) {
 	.ModalADD-CSS {
-		z-index: 5;
+		z-index: 15;
 		height: 83%;
 		width: 700px;
 		opacity: 1;
