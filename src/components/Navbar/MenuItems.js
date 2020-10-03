@@ -32,7 +32,7 @@ export const MenuItems = [
 	},
 	{
 		title: 'Resume',
-		url: '/docs/ResumeJeffQuittman2020.pdf',
+		url: '/resume/ResumeJeffQuittman2020.pdf',
 		cName: 'Nav-Links-Resume',
 		target: '_blank',
 	},
